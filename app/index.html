@@ -1,0 +1,163 @@
+---
+title: 蔬適點首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="container content">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="bannerImg"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="bannerImg2"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="bannerImg3"></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <div class="swiper-button-prev">
+        <span class="visually-hidden">Previous</span>
+      </div>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <div class="swiper-button-next">
+        <span class="visually-hidden">Next</span>
+      </div>
+    </button>
+  </div>
+
+  <div class="container text-center my-21 ">
+    <h2 class="text-white fw-bold mb-0">蔬菜舒適三步驟</h2>
+    <div class="row mt-9">
+      <div class="col-md-4">
+        <img src="./assets/images/Sign Up.png" alt="SignUp">
+        <div class="d-flex align-items-center justify-content-center mt-6">
+          <img src="./assets/images/number1.png" alt="number1" class="me-3">
+          <p class="text-white mb-0">註冊會員</p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-32 mt-md-0">
+        <img src="./assets/images/Destination.png" alt="Destination">
+        <div class="d-flex align-items-center justify-content-center mt-6">
+          <img src="./assets/images/number2.png" alt="number2" class="me-3">
+          <p class="text-white mb-0">瀏覽地圖</p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-32 mt-md-0">
+        <img src="./assets/images/Make List_(WorkTime).png" alt="WorkTime">
+        <div class="d-flex align-items-center justify-content-center mt-6">
+          <img src="./assets/images/number3.png" alt="number3" class="me-3">
+          <p class="text-white mb-0">加入行程</p>
+        </div>
+      </div>
+    </div>
+    <h3 class="mt-9 mb-0">完成三步驟 就可以馬上規劃自己的行程了！</h3>
+  </div>
+
+  <div class="container text-center my-21">
+    <h2 class="text-white fw-bold mb-0">貼心蔬適類別</h2>
+    <div class="row">
+      <div class="col-6 col-md-4 mt-9 col-lg-2 offset-lg-1">
+        <div class="vegan mx-auto"></div>
+        <h4 class="text-white mt-3 fw-bold me-4">全素</h4>
+      </div>
+      <div class="col-6 col-md-4 mt-9 col-lg-2">
+        <div class="lacto mx-auto"></div>
+        <h4 class="text-white mt-3 fw-bold me-4">奶素</h4>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="ovo mt-10 mx-auto"></div>
+        <h4 class="text-white mt-3 fw-bold me-4">蛋素</h4>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 offset-md-2 offset-lg-0">
+        <div class="ovoLacto mt-10 mx-auto"></div>
+        <h4 class="text-white mt-3 fw-bold me-4">蛋奶素</h4>
+      </div>
+      <div class="col-md-4 col-lg-2">
+        <div class="fivePungent mt-10 mx-auto"></div>
+        <h4 class="text-white mt-3 fw-bold me-4">五辛素</h4>
+      </div>
+    </div>
+    <h3 class="mt-9">依據類別 快速找到你要的店家</h3>
+  </div>
+
+
+  <div class="container text-center my-21">
+    <h2 class="text-white fw-bold mb-0">蔬適地點推薦</h2>
+    <div class="swiper mySwiper mt-12">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="./assets/images/maps.png" class="card-img-top" alt="...">
+            <div class="card-body py-6 px-8">
+              <h5 class="card-title text-start">道德素食館</h5>
+              <ul class="list-unstyled text-start mt-6">
+                <li class="fw-bold d-flex">評價<div class="star2 ms-2"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div><div class="star ms-1"></div></li>
+                <li class="fw-bold mt-3">地址<span class="ms-2">807高雄市三民區泰安街52號</span></li>
+                <li class="fw-bold mt-3">電話<a href="tel:+073136384" class="ms-2 text-decoration-none text-dark">07 313 6384</a></li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary d-grid rounded-pill">更多資訊</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="./assets/images/maps2.png" class="card-img-top rounded-40" alt="...">
+            <div class="card-body py-6 px-8">
+              <h5 class="card-title text-start">清心素食快餐</h5>
+              <ul class="list-unstyled text-start mt-6">
+                <li class="fw-bold d-flex">評價<div class="star2 ms-2"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div><div class="star ms-1"></div><div class="star ms-1"></div></li>
+                <li class="fw-bold mt-3">地址<span class="ms-2">高雄市三民區青島街107號</span></li>
+                <li class="fw-bold mt-3">電話<a href="tel:+073222998" class="ms-2 text-decoration-none text-dark">07 322 2998</a></li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary d-grid rounded-pill">更多資訊</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="./assets/images/maps3.png" class="card-img-top" alt="...">
+            <div class="card-body py-6 px-8">
+              <h5 class="card-title text-start">妙蓮華素食</h5>
+              <ul class="list-unstyled text-start mt-6">
+                <li class="fw-bold d-flex">評價<div class="star2 ms-2"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div></li>
+                <li class="fw-bold mt-3">地址<span class="ms-2">高雄市三民區北平一街170號</span></li>
+                <li class="fw-bold mt-3">電話<a href="tel:+073220419" class="ms-2 text-decoration-none text-dark">07 322 0419</a></li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary d-grid rounded-pill">更多資訊</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="./assets/images/maps4.png" class="card-img-top" alt="...">
+            <div class="card-body py-6 px-8">
+              <h5 class="card-title text-start">慢動作素食</h5>
+              <ul class="list-unstyled text-start mt-6">
+                <li class="fw-bold d-flex">評價<div class="star2 ms-2"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div><div class="star2 ms-1"></div></li>
+                <li class="fw-bold mt-3">地址<span class="ms-2">高雄市三民區瀋陽街145巷2號</span></li>
+                <li class="fw-bold mt-3">電話<a href="tel:+" class="ms-2 text-decoration-none text-dark">此店家無電話號碼</a></li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary d-grid rounded-pill">更多資訊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <span class="visually-hidden">Next</span>
+      </div>
+      
+      <div class="swiper-button-prev">
+        <span class="visually-hidden">Previous</span>
+      </div>
+    </div>
+      <a href="#" class="mt-12 btn btn-outline-primary rounded-pill bg-white py-3 px-12 fw-bold more shadow">更多蔬食地點</a>
+
+  </div>
+
+</div>
+
+

@@ -1,0 +1,157 @@
+.bannerImg {
+  background-image: url(../images/Banner-group-sm.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 560px;
+  @media (min-width: 768px) {
+    background-image: url(../images/Banner-group.png);
+  }
+}
+.bannerImg2 {
+  background-image: url(../images/Banner-group-sm2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 560px;
+  @media (min-width: 768px) {
+    background-image: url(../images/Banner-group2.png);
+  }
+}
+.bannerImg3 {
+  background-image: url(../images/Banner-group-sm3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 560px;
+  @media (min-width: 768px) {
+    background-image: url(../images/Banner-group3.png);
+  }
+}
+
+.vegan {
+  background-image: url(../images/全素.png);
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 160px;
+  &:hover {
+    background-image: url(../images/全素hover.png);
+  }
+}
+.lacto {
+  background-image: url(../images/奶素.png);
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 160px;
+  &:hover {
+    background-image: url(../images/奶素hover.png);
+  }
+}
+.ovo {
+  background-image: url(../images/蛋素.png);
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 160px;
+  &:hover {
+    background-image: url(../images/蛋素hover.png);
+  }
+}
+.ovoLacto {
+  background-image: url(../images/蛋奶素.png);
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 160px;
+  &:hover {
+    background-image: url(../images/蛋奶素hover.png);
+  }
+}
+.fivePungent {
+  background-image: url(../images/五辛素.png);
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 160px;
+  &:hover {
+    background-image: url(../images/五辛素hover.png);
+  }
+}
+
+.btn-outline-primary:hover {
+  color: $white;
+}
+.more:hover {
+  color: $white !important;
+  background: $primary !important;
+}
+
+.card {
+  width: 320px;
+  transition: all 0.5s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &:hover {
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+}
+.star {
+  background-image: url(../images/star.png);
+  width: 22px;
+  height: 22px;
+}
+.star2 {
+  background-image: url(../images/star2.png);
+  width: 22px;
+  height: 22px;
+}
+
+//輪播
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  margin: 8px 0px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 240px;
+  object-fit: cover;
+}
+.swiper-button-next {
+  background-image: url(../images/right.png);
+  background-repeat: no-repeat;
+  height: 23px;
+  width: 28px;
+  &::after {
+    content: ' ';
+  }
+  &:hover{
+    background-image: url(../images/right_hover.png);
+  }
+}
+.swiper-button-prev {
+  background-image: url(../images/left.png);
+  background-repeat: no-repeat;
+  height: 23px;
+  width: 28px;
+  &::after {
+    content: ' ';
+  }
+  &:hover{
+    background-image: url(../images/left_hover.png);
+  }
+}
