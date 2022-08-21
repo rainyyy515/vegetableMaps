@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>蔬適點行程</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d556ee0254.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-0">
+      <div class="container">
+        <a class="navbar-brand py-0 me-0" href="./index.html"
+          ><h1 class="mb-0 text-white py-3 fw-bold ms-11">蔬適點</h1></a
+        >
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="./assets/images/Vector.png" alt="navbar" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-md-0 text-center align-items-md-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white px-6 py-2 py-md-0 me-md-3"
+                aria-current="page"
+                href="./index.html"
+                >首頁</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-6 py-2 py-md-0 me-md-3"
+                href="./maps.html"
+                >地圖</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-6 py-2 py-md-0 me-md-3"
+                href="./collect.html"
+                >收藏</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-6 py-2 py-md-0 me-md-3"
+                href="./travel.html"
+                >行程</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white px-6 py-2 py-md-0" href="#"
+                >登入/註冊</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white px-6 py-2 py-md-0 px-md-0 me-md-6 ms-md-3"
+                href="#"
+              >
+                <img src="./assets/images/logout.png" alt="logout" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+<div class="travel">
+  <section>
+    <div class="container my-10 d-flex justify-content-center">
+      <h2 class="text-white fw-bold text-center">
+        蔬適點行程<span class="mx-auto"></span>
+      </h2>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row mb-10">
+        <div class="col-md-5 col-lg-4 bg-primary py-3 border border-secondary border-3 mb-3 mb-md-0 rounded d-flex flex-column justify-content-between">
+          <div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="請輸入事項" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-secondary text-white" type="button" id="button-addon2">新增</button>
+            </div>
+            <div class="list-group">
+                  <label class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      行程一
+                    </div>
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">導航</button>
+                  </label>
+                  <label class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      行程二
+                    </div>
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">導航</button>
+                  </label>
+                  <label class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      行程三
+                    </div>
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">導航</button>
+                  </label>
+                  <label class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      行程四
+                    </div>
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">導航</button>
+                  </label>
+                  <label class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                      <input class="form-check-input me-1" type="checkbox" value="">
+                      行程五
+                    </div>
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">導航</button>
+                  </label>
+            </div>
+          </div>
+          <button class="btn btn-secondary text-white" type="button" id="button-addon2">清除已完成事項</button>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <div
+            id="map"
+            class="container border border-secondary border-3 shadow rounded"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+    <footer class="container footer">
+      <h3 class="h1 text-dark text-center mb-0 fw-bold">蔬適點</h3>
+      <ul class="nav justify-content-center mt-9">
+        <li class="nav-item mb-21">
+          <a
+            class="nav-link active text-white px-6 me-3"
+            aria-current="page"
+            href="./index.html"
+            >首頁</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white px-6 me-3" href="./maps.html">地圖</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white px-6 me-3" href="./collect.html"
+            >收藏</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white px-6 me-3" href="./travel.html">行程</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white px-6">登入/註冊</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCE8l0Ikby4ClmUZMIHntYaw6bOShUUwo&callback=initMap"
+    ></script>
+    <script type="module" src="./assets/js/all.js"></script>
+  </body>
+</html>

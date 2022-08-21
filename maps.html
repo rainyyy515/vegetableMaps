@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%- title %></title>
+    <title>蔬適點地圖</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -85,7 +85,33 @@
       </div>
     </nav>
 
-    <%- contents %>
+    
+<div class="container my-10">
+  <form class="d-flex align-items-center">
+    <select class="form-select mx-2 mx-md-3" aria-label="Default select example">
+      <option selected>請選擇縣市</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <select class="form-select mx-2 mx-md-3" aria-label="Default select example">
+      <option selected>請選擇地區</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <select class="form-select mx-2 mx-md-3" aria-label="Default select example">
+      <option selected>請選擇種類</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <input type="submit" class="btn btn-secondary text-white" value="收尋">
+  </form>
+</div>
+
+<div id="map" class="mb-10 container border border-secondary border-3 shadow rounded"></div>
+
 
     <footer class="container footer">
       <h3 class="h1 text-dark text-center mb-0 fw-bold">蔬適點</h3>
